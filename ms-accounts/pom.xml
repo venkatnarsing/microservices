@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.microservices</groupId>
+    <artifactId>microservices-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.microservices.accounts</groupId>
+  <artifactId>ms-accounts</artifactId>
+  <name>ms-accounts</name>
+  <url>http://maven.apache.org</url>
+  
+  	<properties>
+		<start-class>com.microservices.accounts.server.AccountsServer</start-class>
+	</properties>
+
+	<dependencies>
+		
+		<dependency>
+            <!-- In-memory database for testing/demos -->
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+        </dependency>
+		
+		<dependency>
+            <!-- Setup Spring Data JPA Repository support -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+	</dependencies>
+  
+  <build>
+     <plugins>
+         <plugin>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-maven-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <goals>
+                         <goal>repackage</goal>
+                     </goals>
+                 </execution>
+             </executions>
+         </plugin>
+     </plugins>
+     <finalName>accounts</finalName>
+   </build>  
+  
+</project>

@@ -1,0 +1,7 @@
+com\microservices\accounts\AccountsConfiguration.class
+com\microservices\accounts\controller\AccountsController.class
+com\microservices\accounts\repository\AccountRepository.class
+com\microservices\accounts\server\AccountsServer.class
+com\microservices\accounts\App.class
+com\microservices\accounts\controller\HomeController.class
+com\microservices\accounts\Account.class
