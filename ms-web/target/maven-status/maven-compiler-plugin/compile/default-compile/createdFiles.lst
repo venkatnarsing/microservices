@@ -1,7 +1,0 @@
-com\microservices\web\service\WebAccountsService.class
-com\microservices\web\server\WebServer.class
-com\microservices\web\Account.class
-com\microservices\web\controller\WebAccountsController.class
-com\microservices\web\SearchCriteria.class
-com\microservices\web\App.class
-com\microservices\web\controller\HomeController.class
